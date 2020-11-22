@@ -1,0 +1,281 @@
+:root {
+
+  --background: #0a2540;
+
+  --grey: #adbdcc;
+
+  --white: #fff
+
+  --accentcolor: #00d4ff;
+
+}
+
+ 
+
+body {
+
+  font-size: 16px;
+
+  background-color: var(--background);
+
+  position: relative;
+
+}
+
+ 
+
+.container {
+
+  margin: 7rem auto; /*100px auto*/
+
+  width: 14.9rem;  /*240px*/
+
+  border-left: 0.4rem solid #00d4ff;
+
+  padding: 0 0.6rem;
+
+  border-image:
+
+    linear-gradient(
+
+    #f87611,
+
+    #ff3a35) 1 100%;
+
+}
+
+ 
+
+h1, h3 {
+
+  margin: 0;
+
+}
+
+ 
+
+h1 {
+
+  color: var(--grey);
+
+  font-family: 'Lato', sans-serif;
+
+  /* font-family: 'Dancing Script', cursive; */
+
+  font-size: 2.5rem;
+
+}
+
+ 
+
+h3 {
+
+  color: var(--white);
+
+  font-family: 'Montserrat', sans-serif;
+
+  /* font-family: 'Open Sans', sans-serif; */
+
+}
+
+ 
+
+ 
+
+/* arrow code */
+
+ 
+
+a {
+
+  color: var(--grey);
+
+  text-decoration: none;
+
+}
+
+ 
+
+.arrow {
+
+  text-align: center;
+
+  margin: 8% 0;
+
+  opacity: 0.6;
+
+}
+
+ 
+
+.fadein {
+
+  -webkit-animation: fadein 6s;
+
+  animation: fadein 6s;
+
+}
+
+ 
+
+@-webkit-keyframes fadein {
+
+  0% { opacity: 0; }
+
+  20% { opacity: 0; }
+
+  100% { opacity: 0.6;}
+
+}
+
+ 
+
+@keyframes fadeIn {
+
+  0% { opacity: 0; }
+
+  20% { opacity: 0; }
+
+  100% { opacity: 0.6; }
+
+}
+
+ 
+
+.bounce {
+
+  -webkit-animation: bounce 3.6s infinite;
+
+  animation: bounce 3.6s infinite;
+
+}
+
+ 
+
+@-webkit-keyframes bounce {
+
+  0%,
+
+  10%,
+
+  25%,
+
+  40%,
+
+  50% {
+
+    -webkit-transform: translateY(0);
+
+            transform: translateY(0);
+
+  }
+
+  20% {
+
+    -webkit-transform: translateY(-5px);
+
+            transform: translateY(-5px);
+
+  }
+
+  30% {
+
+    -webkit-transform: translateY(-2px);
+
+            transform: translateY(-2px);
+
+  }
+
+}
+
+ 
+
+@keyframes bounce {
+
+  0%,
+
+  10%,
+
+  25%,
+
+  40%,
+
+  50% {
+
+    -webkit-transform: translateY(0);
+
+            transform: translateY(0);
+
+  }
+
+  20% {
+
+    -webkit-transform: translateY(-5px);
+
+            transform: translateY(-5px);
+
+  }
+
+  30% {
+
+    -webkit-transform: translateY(-2px);
+
+            transform: translateY(-2px);
+
+  }
+
+}
+
+ 
+
+ 
+
+/* Data presentation */
+
+ 
+
+.border-container {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+
+  color: var(--grey);
+
+}
+
+ 
+
+.counter {
+
+  display: inline-block;
+
+  /*display: flex;
+
+  justify-content: center;*/
+
+  font-size: 2.5rem;
+
+  grid-column-start: 1;
+
+ 
+
+}
+
+ 
+
+.shortTextPresentation {
+
+  display: inline-block;
+
+ 
+
+  /*margin: 50px 50px;*/
+
+  grid-column-start: 2;
+
+}
